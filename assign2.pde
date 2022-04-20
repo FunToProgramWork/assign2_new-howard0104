@@ -12,7 +12,7 @@ int x =0;
 int lightPos = 240+25;
 int xPos=200, yPos=200;
 
-int speed=20;
+int speed=10;
 
 
 void setup() {
