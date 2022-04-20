@@ -65,7 +65,7 @@ void draw() {
    
     
   }
-  delay(125);
+  
     
     
     
