@@ -12,6 +12,8 @@ int x =0;
 int lightPos = 240+25;
 int xPos=200, yPos=200;
 
+int speed=20;
+
 
 void setup() {
   size(640, 480, P2D);
@@ -40,26 +42,26 @@ void draw() {
   
   image(ghImg,xPos+120, yPos-120);
     // Game Start
-   {x=x+80;
+   {x=x+5;
   if ( x > 640)
     x = -80;}
     
     if (keyPressed) {
     if (key == 'w') {
-      yPos -= 80;
+      yPos -= speed;
       
     }
     if (key == 's') {
-      yPos += 80;
+      yPos += speed;
       
       image(downImg,xPos+120,yPos-120);
     }
     if (key == 'a') {
-      xPos -= 80;
+      xPos -= speed;
        image(liftImg,xPos+120,yPos-120);
     }
     if (key == 'd') {
-      xPos += 80;
+      xPos += speed;
        image(rightImg,xPos+120,yPos-120);
     }
    
